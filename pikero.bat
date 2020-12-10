@@ -11,7 +11,7 @@ echo.
 echo.
 echo 1. Zacznij gre
 echo 2. Informacje o grze
-echo 3. Alt+F4
+echo 3. Wyjście
 set /p wybieram:={1;2;3}:
 if %wybieram:%==1 goto gra
 if %wybieram:%==2 goto info
@@ -71,11 +71,27 @@ echo Madam: Yyyyyyyyyy gdzie jest Krys?
 pause>nul
 echo N̷̠͖̫̜̬̝̱̱̫̬̕ì̶̺̮̻̥͔̩̫̙̺͇̤̞̤̈́̍̈́k̶̰̯̳̣̖̞̹̊̈́̑͌ē̸̜̺̗̹͈̙̯̼̬̊̽͛͂͗̀ͅr̶̩̣̉̀͠: ...?
 pause>nul
+
+:wiocha
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
 echo 2. Do czyjegos domu
 echo 3. Do tabliczki
 set /p wybieram:={1;2;3}:
-if %wybieram:%==1 goto Do sklepu
-if %wybieram:%==2 goto Do czyjegos domu
-if %wybieram:%==1 goto Do tabliczki
+if %wybieram:%==1 goto Do-sklepu
+if %wybieram:%==2 goto Do-czyjegos-domu
+if %wybieram:%==1 goto Do-tabliczki
+
+:Do-sklepu
+cls
+echo Witaj
+pause>nul
+echo Co chcesz kupic?
+pause>nul
+cls
+echo HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
+echo Jaki zart!
+echo jestem biedny, nic nie mam a ta wiocha popada w ruinę.
+echo więc ci nic nie sprzedam!!! HAHHAHAHHA
+cls
+goto wiocha
