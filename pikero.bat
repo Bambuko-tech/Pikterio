@@ -93,5 +93,15 @@ echo HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
 echo Jaki zart!
 echo jestem biedny, nic nie mam a ta wiocha popada w ruinę.
 echo więc ci nic nie sprzedam!!! HAHHAHAHHA
+pause> nul
 cls
 goto wiocha
+
+:Do-czyjegos-domu
+echo Dlaczego wchodzisz tutaj? WYPIERDALAJ!
+pause> nul
+goto wiocha
+
+:Do-tabliczki
+echo Świat Snow
+pause> nul
