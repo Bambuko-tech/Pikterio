@@ -100,3 +100,8 @@ goto wiocha
 :Do-tabliczki
 echo Świat Snow
 pause> nul
+echo \\      /\      //   /\     ||            
+echo  \\    //\\    //   //\\    ||          |  /
+echo   \\  //  \\  //   //__\\   ||          ||/
+echo    \\//    \\//   //    \\  ||________  ||
+echo     \/      \/   //      \\ |_________| || kontyuuj ten napis
