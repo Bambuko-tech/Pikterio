@@ -89,7 +89,7 @@ pause>nul
 echo Sprzedawca: Co chcesz kupic?
 pause>nul
 cls
-echo Sprzedawca: HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
+echo Sprzedawca: HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHA
 pause> nul
 echo Sprzedawca: Jaki zart!
 pause> nul
