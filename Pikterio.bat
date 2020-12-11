@@ -147,18 +147,56 @@ cls
 goto menuwalki
 
 :defend
-echo N☠♓︎🙵♏︎❒︎ broni pikiem siebie i Madama.
-pause>nul
-echo Niszczyciel snow: Ile jescze mam was uderzac?
-pause>nul
-echo Madam: Do konca twojej energi.
-pause>nul
-echo Niszczyciel snow: Juz nie moge
-pause>nul
-echo Niszczyciel snow: Kiedys was dorwe!
+set kasa=10
+
+echo Udalo ci wygrac przeciwnik zgubil 10 zl!
 pause>nul
 cls
 
-echo Udalo ci wygrac przeciwnik zgubil 10 zl!
+echo Madam: On ucieka!
+pause>nul
+cls
+echo Omegapadalec: ATAKUJE
+pause>nul
+
+:menuwalki0
+echo 1. Walka
+echo 2. Dzialanie
+echo 3. Obrona
+echo 4. Leczenie
+set /p wybieram:={1;2;3;4}:
+if %wybieram:%==1 goto walka0
+if %wybieram:%==2 goto dzial0
+if %wybieram:%==3 goto defend0
+if %wybieram:%==4 goto heal
+
+:dzial0
+echo Madam zaspiewal wzruszajaca piosenke, a i tak Omegapadalec sie nie wzruszyl,
+pause>nul
+echo Ale inni tak.
+pause>nul
+echo Niker placze
+pause>nul
+cls
+goto menuwalki0
+
+:defend0
+echo Niker: dklmasldmlkdmkobabh
+pause>nul
+echo Madam: ???
+pause>nul
+cls
+goto menuwalki0
+
+:heal
+echo Madam: Moglismy najpierw isc po mleko.
+pause>nul
+cls
+goto menuwalki0
+
+:walka0
+echo Niker atakuje zadal 50 hp Madam 68 hp!
+pause>nul
+echo Madam: Ladnie poszlo.
 pause>nul
 cls
