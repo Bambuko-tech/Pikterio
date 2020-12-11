@@ -161,3 +161,4 @@ cls
 
 echo Udalo ci wygrac przeciwnik zgubil 10 zl!
 pause>nul
+cls
