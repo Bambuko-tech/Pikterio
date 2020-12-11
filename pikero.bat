@@ -1,10 +1,10 @@
 @echo off
-title Pikterio 0.1 (DEMO) zrobione Drzesji
+title Pikterio 0.1 (DEMO)
 color 0A
 
 :start
 echo --------------------------------------
-echo ------- Witaj w Pikerio 0.1 ----------
+echo ------- Witaj w Pikerio (DEMO) -------
 echo --------------------------------------
 echo -------------------------------------- 
 echo.
@@ -86,13 +86,16 @@ if %wybieram:%==1 goto Do-tabliczki
 cls
 echo Witaj
 pause>nul
-echo Co chcesz kupic?
+echo Sprzedawca: Co chcesz kupic?
 pause>nul
 cls
-echo HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
-echo Jaki zart!
-echo jestem biedny, nic nie mam a ta wiocha popada w ruinę.
-echo więc ci nic nie sprzedam!!! HAHHAHAHHA
+echo Sprzedawca: HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
+pause> nul
+echo Sprzedawca: Jaki zart!
+pause> nul
+echo Sprzedawca: jestem biedny, nic nie mam a ta wiocha popada w ruinę.
+pause> nul
+echo Sprzedawca: więc ci nic nie sprzedam!!! HAHHAHAHHA
 pause> nul
 cls
 goto wiocha
