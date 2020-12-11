@@ -200,3 +200,20 @@ pause>nul
 echo Madam: Ladnie poszlo.
 pause>nul
 cls
+
+echo Madam: Patrz jaki glupek zgubil 100 zl
+pause>nul
+cls
+
+:wiocha0
+echo Gdzie chcesz isc?
+echo 1. Do sklepu
+echo 2. Dalej
+set /p wybieram:={1;2}:
+if %wybieram:%==1 goto sklep
+if %wybieram:%==2 goto dalej
+
+:dalej
+echo Madam: Zaufaj mi kupmy mleko.
+pause>nul
+echo Madam: Moze kilka.
