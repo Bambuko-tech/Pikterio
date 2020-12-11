@@ -89,7 +89,8 @@ pause>nul
 echo Sprzedawca: Co chcesz kupic?
 pause>nul
 cls
-echo Sprzedawca: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!
+echo Sprzedawca: HAHAHHAHHAHAHHAHHAHAHHAHAHHAHHAHHA
+pause> nul
 echo Sprzedawca: Jaki zart!
 pause> nul
 echo Sprzedawca: jestem biedny, nic nie mam a ta wiocha popada w ruinę.
@@ -107,3 +108,4 @@ goto wiocha
 :Do-tabliczki
 echo Świat Snow
 pause> nul
+echo Madam: Tam jest staruszek
