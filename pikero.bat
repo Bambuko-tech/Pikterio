@@ -108,3 +108,4 @@ goto wiocha
 :Do-tabliczki
 echo Świat Snow
 pause> nul
+echo Madam: tam jest staruszek
