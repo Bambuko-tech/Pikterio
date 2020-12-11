@@ -53,11 +53,11 @@ echo --------------------------------------
 pause>nul
 echo Krys: Tam jest inny wymiar.
 echo Krys: Bedziedzie mnie trzymac za reke?
-echo N̷̠͖̫̜̬̝̱̱̫̬̕ì̶̺̮̻̥͔̩̫̙̺͇̤̞̤̈́̍̈́k̶̰̯̳̣̖̞̹̊̈́̑͌ē̸̜̺̗̹͈̙̯̼̬̊̽͛͂͗̀ͅr̶̩̣̉̀͠: Dobrze
+echo ☠︎♓︎🙵♏︎❒︎: Dobrze
 echo Madam: Ok
 pause>nul
 echo Krys: AAAAAAAAAAAAAAAAAAAAAAAAAAA!!!
-echo Madam: moze zwale to na ciebie N̷̠͖̫̜̬̝̱̱̫̕ì̶̺̮̻̥͔̩̫̙̺͇̤̞̤̈́̍̈́k̶̰̯̳̣̖̞̹̊̈́̑͌ē̸̜̺̗̹͈̙̯̼̬̊̽͛͂͗̀ͅr̶̩̣̉̀͠
+echo Madam: moze zwale to na ciebie ☠︎♓︎🙵♏︎❒︎
 
 pause>nul
 echo --------------------------------------
@@ -69,7 +69,7 @@ jestes w
 cls
 echo Madam: Yyyyyyyyyy gdzie jest Krys?
 pause>nul
-echo N̷̠͖̫̜̬̝̱̱̫̬̕ì̶̺̮̻̥͔̩̫̙̺͇̤̞̤̈́̍̈́k̶̰̯̳̣̖̞̹̊̈́̑͌ē̸̜̺̗̹͈̙̯̼̬̊̽͛͂͗̀ͅr̶̩̣̉̀͠: ...?
+echo ☠︎♓︎🙵♏︎❒︎: ...?
 pause>nul
 
 :wiocha
