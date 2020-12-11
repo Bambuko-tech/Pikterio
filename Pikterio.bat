@@ -1,10 +1,10 @@
 @echo off
-title Pikterio 0.1 (DEMO)
+title Pikterio 0.1 (DEMO) zrobione Drzesji
 color 0A
 
 :start
 echo --------------------------------------
-echo ------- Witaj w Pikterio 0.1!N -------
+echo ------- Witaj w Pikterio 0.1 ----------
 echo --------------------------------------
 echo -------------------------------------- 
 echo.
@@ -108,14 +108,56 @@ echo Madam: Dlaczego?
 pause>nul
 echo Staruszek: yyyyyyyyyy...
 pause>nul
-echo  \\      /\      //   /\     ||           _  
-echo   \\    //\\    //   //\\    ||          | |
-echo    \\  //  \\  //   //__\\   ||          |_|
-echo     \\//    \\//   //    \\  ||________   _
-echo      \/      \/   //      \\ |_________| |_|
-pause>nul
 cls
 echo Niszczyciel snow: ATAKUJE
 pause>nul
 echo Niszczyciel snow: Moja moc rosnie!
+pause>nul
+cls
+
+:menuwalki
+echo 1. Walka
+echo 2. Dzialanie
+echo 3. Obrona
+echo 4. Ucieczka
+set /p wybieram:={1;2;3;4}:
+if %wybieram:%==1 goto walka
+if %wybieram:%==2 goto dzial
+if %wybieram:%==3 goto defend
+if %wybieram:%==4 goto flee
+
+:walka
+echo Madam: Ej zajefajny ten miecz a ty N☠♓︎🙵♏︎❒︎ cos co trudno mi powiedziedz.
+pause>nul
+echo Zadano 150 hp, a i tak malo.
+pause>nul
+echo Niszczyciel snow: HAH jesli tak pojdzie to uciekne
+pause>nul
+echo Niszczyciel zadal 151 hp Ni♓︎🙵♏︎❒︎ 119 hp Madam.
+pause>nul
+echo Zostalo Ni♓︎🙵♏︎❒︎ 1 hp Madam tez 1 hp.
+pause>nul
+cls
+goto menuwalki
+
+:dzial
+echo Poprostu jest mocny.
+pause>nul
+cls
+goto menuwalki
+
+:defend
+echo N☠♓︎🙵♏︎❒︎ broni pikiem siebie i Madama.
+pause>nul
+echo Niszczyciel snow: Ile jescze mam was uderzac?
+pause>nul
+echo Madam: Do konca twojej energi.
+pause>nul
+echo Niszczyciel snow: Juz nie moge
+pause>nul
+echo Niszczyciel snow: Kiedys was dorwe!
+pause>nul
+cls
+
+echo Udalo ci wygrac przeciwnik zgubil 10 zl!
 pause>nul
