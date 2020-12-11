@@ -1,5 +1,5 @@
 @echo off
-title Pikterio 0.1 (DEMO) zrobione Drzesji
+title Pikterio 0.1 (DEMO)
 color 0A
 
 :start
