@@ -218,6 +218,8 @@ if %wybieram:%==2 goto dalej
 echo Madam: Zaufaj mi kupmy mleko.
 pause>nul
 echo Madam: Moze kilka.
+pause>nul
+goto wiocha0
 
 :sklep
 echo Madam: Mamy 110 zl co za to mozemy kupic?
