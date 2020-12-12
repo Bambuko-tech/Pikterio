@@ -77,10 +77,13 @@ pause>nul
 
 :wiocha
 if %szansa:%==100 goto menuwalki
+if NOT %szansa%==100 goto wiocha2
+:wiocha2
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
 echo 2. Do czyjegos domu
 echo 3. Do tabliczki
+if %szansa:%==100 goto menuwalki
 set /p wybieram:={1;2;3}:
 if %wybieram:%==1 goto Do-sklepu
 if %wybieram:%==2 goto Do-czyjegos-domu
@@ -118,7 +121,9 @@ pause>nul
 set szansa= %szansa%+100
 cls
 goto wiocha
+
 :menuwalki
+cls
 echo ##########################
 echo      Zycie: %życie%
 echo Zycie przeciwnika:%zycie2%
