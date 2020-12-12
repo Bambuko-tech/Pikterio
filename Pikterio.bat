@@ -77,7 +77,7 @@ pause>nul
 
 :wiocha
 if %szansa:%==100 goto menuwalki
-if NOT %szansa%==100 goto wiocha2
+if NOT %szansa:%==100 goto wiocha2
 :wiocha2
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
