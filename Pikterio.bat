@@ -147,7 +147,7 @@ cls
 goto menuwalki
 
 :defend
-set kasa=10
+set kasa= %kasa%+10
 
 echo Udalo ci wygrac przeciwnik zgubil 10 zl!
 pause>nul
