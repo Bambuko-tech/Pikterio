@@ -29,6 +29,9 @@ goto start
 
 :gra
 set kasa=0
+set życie=100
+set szansa=0
+set zycie2=120
 cls
 echo Wpisz swoje imie:
 set /p "imie=>> "
@@ -73,6 +76,7 @@ echo ☠︎♓︎🙵♏︎❒︎: ...?
 pause>nul
 
 :wiocha
+if %szansa:%==100 goto menuwalki
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
 echo 2. Do czyjegos domu
@@ -106,16 +110,19 @@ echo Staruszek: Musicie zabic dla mnie 3 Omegapadalecow
 pause>nul
 echo Madam: Dlaczego?
 pause>nul
-echo Staruszek: yyyyyyyyyy...
+echo Staruszek: yyyyyyyyyy... nie wiem...
 pause>nul
 cls
-echo Niszczyciel snow: ATAKUJE
+echo Madam: Aha...
 pause>nul
-echo Niszczyciel snow: Moja moc rosnie!
-pause>nul
+set szansa= %szansa%+100
 cls
-
+goto wiocha
 :menuwalki
+echo ##########################
+echo      Zycie: %życie%
+echo Zycie przeciwnika:%zycie2%
+echo ##########################
 echo 1. Walka
 echo 2. Dzialanie
 echo 3. Obrona
@@ -126,16 +133,16 @@ if %wybieram:%==2 goto dzial
 if %wybieram:%==3 goto defend
 if %wybieram:%==4 goto flee
 
-:walka
+:atak
+set /a atak=(%random% %%40)
+set /a atak2=(%random% %%30)
 echo Madam: Ej zajefajny ten miecz a ty N☠♓︎🙵♏︎❒︎ cos co trudno mi powiedziedz.
 pause>nul
-echo Zadano 150 hp, a i tak malo.
+echo Zadano %atak% hp.
+set /a %zycie2%-%atak%
 pause>nul
-echo Niszczyciel snow: HAH jesli tak pojdzie to uciekne
-pause>nul
-echo Niszczyciel zadal 151 hp Ni♓︎🙵♏︎❒︎ 119 hp Madam.
-pause>nul
-echo Zostalo Ni♓︎🙵♏︎❒︎ 1 hp Madam tez 1 hp.
+echo Przeciwnik zadał %atak2% obrażeń.
+set /a %zycie%-%atak2%
 pause>nul
 cls
 goto menuwalki
