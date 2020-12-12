@@ -219,6 +219,7 @@ echo Madam: Zaufaj mi kupmy mleko.
 pause>nul
 echo Madam: Moze kilka.
 pause>nul
+cls
 goto wiocha0
 
 :sklep
