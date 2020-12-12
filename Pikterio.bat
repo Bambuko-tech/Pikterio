@@ -195,6 +195,7 @@ cls
 goto menuwalki0
 
 :walka0
+set kasa=110
 echo Niker atakuje zadal 50 hp Madam 68 hp!
 pause>nul
 echo Madam: Ladnie poszlo.
@@ -217,3 +218,9 @@ if %wybieram:%==2 goto dalej
 echo Madam: Zaufaj mi kupmy mleko.
 pause>nul
 echo Madam: Moze kilka.
+
+:sklep
+echo Madam: Mamy 110 zl co za to mozemy kupic?
+echo Sprzedawca: Mozecie kupic mleko, tarcze papier toaletowy®.
+echo Madam: Dlaczego nie zbroje?
+echo Sprzedawca: Kosztuje 500 zl, ale  ten "Staruszek" chcial zmienic cene, ale go dorwalem.
