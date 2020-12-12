@@ -224,3 +224,5 @@ echo Madam: Mamy 110 zl co za to mozemy kupic?
 echo Sprzedawca: Mozecie kupic mleko, tarcze papier toaletowy®.
 echo Madam: Dlaczego nie zbroje?
 echo Sprzedawca: Kosztuje 500 zl, ale  ten "Staruszek" chcial zmienic cene, ale go dorwalem.
+
+echo Sprzedwaca: To co chcesz kupic?
