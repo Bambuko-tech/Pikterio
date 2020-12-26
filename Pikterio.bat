@@ -76,9 +76,11 @@ echo ☠︎♓︎🙵♏︎❒︎: ...?
 pause>nul
 
 :wiocha
-if %szansa:%==100 goto menuwalki
-if NOT %szansa:%==100 goto wiocha2
+if /a szansa==100 goto menuwalki
+if NOT /a szansa==100 goto wiocha2
 :wiocha2
+set /a szansa=szansa+5
+cls
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
 echo 2. Do czyjegos domu
@@ -124,6 +126,7 @@ goto wiocha
 
 :menuwalki
 cls
+set szansa=0
 echo ##########################
 echo      Zycie: %życie%
 echo Zycie przeciwnika:%zycie2%
