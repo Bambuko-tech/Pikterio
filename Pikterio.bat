@@ -3,6 +3,8 @@ title Pikterio 0.1 (DEMO) zrobione Drzesji
 color 0A
 
 :start
+cls
+set szansa=0
 echo --------------------------------------
 echo ------- Witaj w Pikterio 0.1 ----------
 echo --------------------------------------
@@ -22,7 +24,7 @@ exit
 
 :info
 cls
-echo Gra zostala stworzona przez Drzesji z wspolpraca z Bambuko, gra moze byc lepsza.
+echo Gra zostala stworzona przez Drzesji ( ta kórua a kto naprawiau kod po tobie? - Bambuko),z wspolpraca z Bambuko, gra moze byc lepsza.
 pause>nul
 cls 
 goto start
@@ -76,11 +78,12 @@ echo ☠︎♓︎🙵♏︎❒︎: ...?
 pause>nul
 
 :wiocha
+set /a szansa=szansa + 5
 echo Gdzie chcesz isc?
 echo 1. Do sklepu
 echo 2. Do czyjegos domu
 echo 3. Do tabliczki
-if %szansa:%==100 goto menuwalki
+if %szansa% GTR 100 goto menuwalki
 set /p wybieram:={1;2;3}:
 if %wybieram:%==1 goto Do-sklepu
 if %wybieram:%==2 goto Do-czyjegos-domu
