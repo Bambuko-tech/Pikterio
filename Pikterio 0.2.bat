@@ -30,6 +30,9 @@ cls
 goto start
 
 :gra
+set exp=0
+set exp1=0
+set exp2=0
 set atka=4
 set lifing=21
 set ata=10
@@ -39,6 +42,7 @@ set kasa=0
 set życie=24
 set szansa=0
 set zycie2=48
+if %lifing% LSS 0 goto wiocha0
 cls
 echo --------------------------------------
 echo ----------- Polska 2019r. ------------
@@ -77,10 +81,10 @@ echo Madam: Yyyyyyyyyy gdzie jest Krys?
 pause>nul
 echo ☠︎♓︎🙵♏︎❒︎: ...?
 pause>nul
-cls
 
 :wiocha
 echo Gdzie chcesz iść?
+pause>nul
 echo 1. Do sklepu
 echo 2. Do czyjegoś domu
 echo 3. Do tabliczki
@@ -97,12 +101,14 @@ cls
 goto wiocha
 
 :Do-czyjegos-domu
+cls
 echo ???: Dlaczego wszyscy wchodzą do mnie. A i jeszcze wynoście się z tąd!!
 pause>nul
 cls
 goto wiocha
 
 :gameover
+cls
 echo ------------------------------------
 echo ███▀▀▀██-███▀▀▀███-███▀█▄█▀███-██▀▀▀
 echo ██----██-██-----██-██---█---██-██---
@@ -122,6 +128,7 @@ set zycie2=48
 pause>nul
 cls
 :Do-tabliczki
+cls
 echo ŚWIAT SNÓW
 pause>nul
 echo Madam: Tam jest staruszek
@@ -137,6 +144,8 @@ pause>nul
 cls
 goto menuwalki
 :menuwalki
+if %życie% LSS 1 goto gameover
+if %zycie2% LSS 0 goto gameover
 echo ##########################
 echo      Niszczyciel Snów
 echo   Zycie przeciwnika:137
@@ -154,6 +163,7 @@ if %wybieram:%==3 goto defend
 if %wybieram:%==4 goto flee
 
 :atak
+cls
 echo Madam: Ej zajefajny ten miecz a ty N☠♓︎🙵♏︎❒︎ coś co trudno mi powiedzieć.
 pause>nul
 echo Madam zadał 15 hp.
@@ -171,6 +181,7 @@ cls
 goto menuwalki56
 
 :dzial
+cls
 echo Poprostu jest mocny.
 pause>nul
 cls
@@ -196,7 +207,7 @@ if %wybieram:%==3 goto defend98
 if %wybieram:%==4 goto flee43
 
 :atak45
-if %życie% LSS 1 goto gameover
+cls
 echo Madam zadał 15 hp.
 pause>nul
 echo Przeciwnik uniknął
@@ -211,14 +222,14 @@ cls
 goto menuwalki56
 
 :dzial65
-if %życie% LSS 1 goto gameover
+cls
 echo Poprostu jest mocny.
 pause>nul
 cls
 goto menuwalki56
 
 :flee
-if %życie% LSS 1 goto gameover
+cls
 echo Niszczyciel Snow: Nie uciekniecie mi!
 pause>nul
 echo Madam: Holyyyy Shii...
@@ -233,7 +244,7 @@ cls
 goto menuwalki
 
 :flee43
-if %życie% LSS 1 goto gameover
+cls
 echo Niszczyciel Snow: Nie uciekniecie mi!
 pause>nul
 echo Madam: Holyyyy Shii...
@@ -248,7 +259,7 @@ cls
 goto menuwalki56
 
 :defend98
-if %życie% LSS 1 goto gameover
+cls
 set kasa= %kasa%+10
 echo Niszczyciel Snow: Nie moge wytrzymac!
 pause>nul
@@ -268,7 +279,7 @@ cls
 goto menuwalki0
 
 :defend
-if %życie% LSS 1 goto gameover
+cls
 set kasa= %kasa%+10
 echo Niszczyciel Snow: Nie moge wytrzymac!
 pause>nul
@@ -304,17 +315,19 @@ if %wybieram:%==3 goto defend0
 if %wybieram:%==4 goto heal
 
 :dzial0
+cls
 echo 1. Sprawdź
 echo 2. Zaśpiewaj
 echo 3. Ulecz
 echo 4. Powrót
 set /p wybieram:={1;2;3;4}:
 if %wybieram:%==1 goto checking
-if %wybieram:%==2 goto playsoud
+if %wybieram:%==2 goto playsound
 if %wybieram:%==3 goto heal
 if %wybieram:%==4 goto back
 
 :playsound
+cls
 echo Madam zaspiewal wzruszajaca piosenke, a i tak Omegapadalec sie nie wzruszyl.
 pause>nul
 echo Ale inni tak.
@@ -325,18 +338,23 @@ cls
 goto dzial0
 
 :defend0
+cls
 echo Niker: dklmasldmlkdmkobabh
 pause>nul
 echo Madam: ???
 pause>nul
+echo Omega padalec zadaje Madamowi 2 ZD
+pause>nul
 cls
+set zycie2-=2
 goto menuwalki0
 
 :checking
+cls
 echo ##########################
 echo        Omegapadalec
 echo          ZD:%lifing%
-echo          ATA:%zycie2%
+echo          ATA:%atka%
 echo ##########################
 pause>nul
 cls
@@ -347,27 +365,68 @@ pause>nul
 cls
 goto dzial0
 
+:menuwalki00
+cls
+echo ##########################
+echo        Omegapadalec
+echo   Zycie przeciwnika:%lifing%
+echo     Zycie Madama:%zycie2%
+echo     Zycie Nikera:%życie%
+echo ##########################
+echo 1. Walka
+echo 2. Dzialanie
+echo 3. Obrona
+echo 4. Ucieczka
+set /p wybieram:={1;2;3;4}:
+if %wybieram:%==1 goto walka28
+if %wybieram:%==2 goto dzial0
+if %wybieram:%==3 goto defend09
+if %wybieram:%==4 goto fleeeee
+
 :heal
+cls
 echo Madam: Moglismy najpierw isc po mleko.
 pause>nul
 cls
 goto menuwalki0
 
-:walka0
-set kasa=110
-echo Niker atakuje zadał 10 ZD Madam 15 ZD!
+:walka28
+cls
+set kasa+=100
+set exp+=7
+set exp+=3
+echo Madam: Mogę ja?
 pause>nul
-set a/ lifing-=1
+echo Madam: To chyba oznacza tak...
+pause>nul
+echo Madam zadaje ostateczne ciosy Omegapadalcu.
+pause>nul
+
+:walka0
+cls
+echo Niker atakuje, zadał 10 ZD!
+pause>nul
+echo Madam zadał 10 ZD!
+pause>nul
+echo Omegapadalec zadaje Madamowi 4 ZD.
+pause>nul
+set /a zycie2-=4
+set /a lifing-=20
 echo Madam: Jestem zmęczony.
 pause>nul
 cls
+goto menuwalki00
 
+:dialog1
+cls
 echo Madam: Patrz jaki glupek zgubil 100 zl
 pause>nul
 cls
+goto wiocha
 
 :wiocha0
 echo Gdzie chcesz isc?
+pause>nul
 echo 1. Do sklepu
 echo 2. Dalej
 set /p wybieram:={1;2}:
@@ -375,14 +434,15 @@ if %wybieram:%==1 goto sklep
 if %wybieram:%==2 goto dalej
 
 :dalej
+cls
 echo Madam: Zaufaj mi kupmy mleko.
 pause>nul
-echo Madam: Moze kilka.
+echo Madam: Może kilka.
 pause>nul
 cls
-goto wiocha0
 
 :sklep
+cls
 echo Madam: Mamy 110 zl co za to mozemy kupic?
 pause>nul
 echo Sprzedawca: Mozecie kupic mleko, tarcze papier toaletowy®.
